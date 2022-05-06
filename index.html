@@ -2,35 +2,36 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Vale</title>
 </head>
 
 <body>
-<div>
+<div class="menu" id="menu">
     <form>
-        <h1>Vale</h1>
-        <div>
-            <div>
+        <h1 class="titulo">Vale</h1>
+        <div class="row">
+            <div class="coluna-numero-recibo">
                 <h4>Número (opcional):</h4>
-                <input id="numero-recibo" type="number" name="mumero-recibo">
+                <input class="input-numero-recibo" id="numero-recibo" type="number" name="mumero-recibo">
             </div>
-            <div>
+            <div class="coluna-valor">
                 <h4 >Valor:</h4>
-                <input id="valor-recibo" type="text" required placeholder="00,00" name="valor">
+                <input class="input-valor" id="valor-recibo" type="text" required placeholder="00,00" name="valor">
             </div>
         </div>
-        <div>
+        <div class="coluna-nome">
             <h4>Nome:</h4>
-            <input  id="nome" required type="text" placeholder="Ex.: Nome do funcionário" name="nome">
+            <input  class="input-nome" id="nome" required type="text" placeholder="Ex.: Nome do funcionário" name="nome">
         </div>
-        <div >
-            <div >
+        <div class="row">
+            <div class="coluna-cidade">
                 <h4>Cidade:</h4>
-                <input  type="text" id="cidade" required name="cidade">
+                <input class="input-cidade" type="text" id="cidade" required name="cidade">
             </div>
-            <div >
+            <div class="coluna-data">
                 <h4>Data:</h4>
-                <input  type="text" id="placeholderSysDate" required maxlength="10" name="data">
+                <input class="input-data" type="text" id="placeholderSysDate" required maxlength="10" name="data">
                 <script>
                     date = new Date();
                     year = date.getFullYear();
@@ -43,12 +44,12 @@
                     }
                 </script>
             </div>
-            <div >
+            <div class="coluna-dados-empresa">
                 <h4>Dados da Empresa (opcional):</h4>
-                <input  id="nome-ps" type="text" name="dados-empresa">
+                <input class="input-dados-empresa" id="nome-ps" type="text" name="dados-empresa">
             </div>
         </div>
-        <div>
+        <div class="botao-gerar-recibo">
             <button type="submit">
                 Gerar Recibo
             </button>
