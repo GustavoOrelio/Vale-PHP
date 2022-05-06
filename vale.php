@@ -50,11 +50,11 @@
         </div>
     </div>
     <div >
-        <button onclick="">
+        <button onclick="imprimir()">
             Gerar Recibo
         </button>
     </div>
-
+    <script src="scriptBotao.js"></script>
 </body>
 
 </html>
