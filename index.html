@@ -6,7 +6,49 @@
 </head>
 
 <body>
-
+<div>
+    <form>
+        <h1>Vale</h1>
+        <div>
+            <div>
+                <h4>Número (opcional):</h4>
+                <input id="numero-recibo" type="number" name="mumero-recibo">
+            </div>
+            <div>
+                <h4 >Valor:</h4>
+                <input id="valor-recibo" type="text" required placeholder="00,00" name="valor">
+            </div>
+        </div>
+        <div>
+            <h4>Nome:</h4>
+            <input  id="nome" required type="text" placeholder="Ex.: Nome do funcionário" name="nome">
+        </div>
+        <div >
+            <div >
+                <h4>Cidade:</h4>
+                <input  type="text" id="cidade" required name="cidade">
+            </div>
+            <div >
+                <h4>Data:</h4>
+                <input  type="text" id="placeholderSysDate" required maxlength="10" name="data">
+                <script>
+                    date = new Date();
+                    year = date.getFullYear();
+                    month = date.getMonth() + 1;
+                    day = date.getDate();
+                    if (month < 10 || date < 10) {
+                        document.getElementById("placeholderSysDate").value = '0' + day + '/0' + month + '/' + year;
+                    } else {
+                        document.getElementById("placeholderSysDate").value = day + '/' + month + '/' + year;
+                    }
+                </script>
+            </div>
+            <div >
+                <h4>Dados da Empresa (opcional):</h4>
+                <input  id="nome-ps" type="text" name="dados-empresa">
+            </div>
+        </div>
+    </form>
 </body>
 
 </html>
