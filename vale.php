@@ -2,55 +2,59 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="valeStyle.css">
     <title>Vale</title>
 </head>
 
 <body>
-<div>
-    <h1>Vale</h1>
-    <div>
-        <div>
-            <h4>VALE</h4>
+<div class="menu" id="menu">
+    <h1 class="titulo">Vale</h1>
+    <div class="row">
+        <div class="coluna-vale">
+            <h4 class="label-valor">VALE</h4>
         </div>
-        <div>
+        <div class="coluna-dados-vale">
             <?php
             echo "VALE:     Nº" . $_POST["mumero-recibo"], "  R$ " . $_POST["valor"], "#";
             ?>
         </div>
     </div>
-    <div >
-        <div >
+    <div class="row">
+        <div class="coluna-nome">
             <?php
             echo "NOME: " . $_POST["nome"];
             ?>
         </div>
     </div>
-    <div>
-        <div>
+    <div class="row">
+        <div class="coluna-valor">
             <?php
             echo "VALOR: " . $_POST["valor"];;
             ?>
         </div>
     </div>
-    <div>
-        <div>
+    <div class="row">
+        <div class="coluna-local-data">
             <?php
             echo "LOCAL/DATA: " . $_POST["cidade"], ", ", $_POST["data"];
             ?>
         </div>
     </div>
-    <div >
-        <p >Assinatura</p>
+    <div class="borda-assinatura">
+        <p class="assinatura-label">Assinatura</p>
     </div>
-    <div >
-        <div >
+    <div class="row">
+        <div class="coluna-dados-empresa">
             <?php
             echo $_POST["dados-empresa"];
             ?>
         </div>
     </div>
-    <div >
+    <div class="botao-gerar-recibo">
         <button onclick="imprimir()">
+         <span class="material-symbols-outlined">
+                            description
+                        </span>
             Gerar Recibo
         </button>
     </div>
