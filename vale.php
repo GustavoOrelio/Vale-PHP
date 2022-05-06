@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="valeStyle.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Vale</title>
 </head>
 
@@ -52,9 +53,9 @@
     </div>
     <div class="botao-gerar-recibo">
         <button onclick="imprimir()">
-         <span class="material-symbols-outlined">
-                            description
-                        </span>
+                <span class="material-symbols-outlined">
+                      description
+                </span>
             Gerar Recibo
         </button>
     </div>
